@@ -1,0 +1,578 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.Table{
+	border-radius: 0px;
+	border-style: solid;
+	border-width: 2px;
+    padding: 20px; 
+    width: 200px;
+    height: 400px; 
+}
+#przycisk {
+	position: absolute;
+	left: 40%;
+}
+#lewy {
+	position: absolute;
+	top: 13%;
+	left: 0;
+	right: 60%;
+	bottom: 0;
+	margin: auto;
+}
+#prawy {
+	position: absolute;
+	top: 13%;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 5px solid blackc;
+}
+</style>
+</head>
+<body>
+<center>
+	<h1>Symulator piłki nożnej</h1>
+	<br>
+	<div id="lewy"  align="center">
+		<div class="Table">
+			<div id="container">
+				<div>
+					<div><font size="5px"><b>Punktacja</b></font></div>
+					<div><hr /></div>
+				</div>
+				<b><p id="demo1"></p>
+				<hr />
+				<p id="demo2"></p>
+				<hr />
+				<p id="demo3"></p>
+				<hr />
+				<p id="demo4"></p>
+				<hr />
+				<p id="demo5"></p>
+				<hr />
+				<p id="demo6"></p></b>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div id="prawy">
+	<table border="2px solid black" cellpadding="5px">
+		<tr>
+			<th align="center" colspan="6px">Mecze</th>
+		</tr>
+		<tr>
+			<th align="center" colspan="3px">1. Kolejka</th>
+			<th align="center" colspan="3px">3. Kolejka</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="Legia.png" height="40" width="40"></td>
+					<td>Legia Warszawa</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Legia1"></p></td>
+					<td>:</td>
+					<td><p id="Lech1"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Lech poznań</td>
+					<td><img src="Lech.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="Zabrze.png" height="40" width="40"></td>
+					<td>Górnik Zabrze</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Zabrze3"></p></td>
+					<td>:</td>
+					<td><p id="Lech3"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Lech poznań</td>
+					<td><img src="Lech.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="GKS.png" height="40" width="40"></td>
+					<td>GKS Katowice</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="GKS1"></p></td>
+					<td>:</td>
+					<td><p id="Zabrze1"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Górnik Zabrze</td>
+					<td><img src="Zabrze.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="GKS.png" height="40" width="40"></td>
+					<td>GKS Katowice</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="GKS3"></p></td>
+					<td>:</td>
+					<td><p id="Wisla3"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Wisła Kraków‎</td>
+					<td><img src="Wisla.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="Wroclaw.png" height="40" width="40"></td>
+					<td>Śląsk Wrocław</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Wroclaw1"></p></td>
+					<td>:</td>
+					<td><p id="Wisla1"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Wisła Kraków‎</td>
+					<td><img src="Wisla.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="Wroclaw.png" height="40" width="40"></td>
+					<td>Śląsk Wrocław</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Wroclaw3"></p></td>
+					<td>:</td>
+					<td><p id="Legia3"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Legia Warszawa</td>
+					<td><img src="Legia.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<th align="center" colspan="3px">2. Kolejka</th>
+			<th align="center" colspan="3px">4. Kolejka</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="Wisla.png" height="40" width="40"></td>
+					<td>Wisła Kraków</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Wisla2"></p></td>
+					<td>:</td>
+					<td><p id="Legia2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Legia Warszawa</td>
+					<td><img src="Legia.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="Wisla.png" height="40" width="40"></td>
+					<td>Wisła Kraków</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Wisla2"></p></td>
+					<td>:</td>
+					<td><p id="Legia2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Legia Warszawa</td>
+					<td><img src="Legia.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="Zabrze.png" height="40" width="40"></td>
+					<td>Górnik Zabrze</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Zabrze2"></p></td>
+					<td>:</td>
+					<td><p id="Wroclaw2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Śląsk Wrocław</td>
+					<td><img src="Wroclaw.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="Zabrze.png" height="40" width="40"></td>
+					<td>Górnik Zabrze</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Zabrze2"></p></td>
+					<td>:</td>
+					<td><p id="Wroclaw2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>Śląsk Wrocław</td>
+					<td><img src="Wroclaw.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><img src="Lech.png" height="40" width="40"></td>
+					<td>Lech poznań</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Lech2"></p></td>
+					<td>:</td>
+					<td><p id="GKS2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>GKS Katowice</td>
+					<td><img src="GKS.png" height="40" width="40"></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><img src="Lech.png" height="40" width="40"></td>
+					<td>Lech poznań</td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="Lech2"></p></td>
+					<td>:</td>
+					<td><p id="GKS2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td>GKS Katowice</td>
+					<td><img src="GKS.png" height="40" width="40"></td>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<button id="przycisk" value="1" type="button" onClick="pilka()">Rozegraj mecze</button>
+	<p id="klik"></p>
+	<p id="wynik"><p>
+</center>
+<script>
+	function pilka(){
+	//Kolejne kolejki
+	var klikniecia = document.getElementById("przycisk").value;
+	document.getElementById("klik").innerHTML=klikniecia;
+	var lech=0;
+	var legia=0;
+	var wroclaw=0;
+	var zabrze=0;
+	var wisla=0;
+	var gks=0;
+	//Losowanie liczb
+	//1 kolejka
+	if(klikniecia==1)
+	{
+		var a = Math.floor(Math.random()*6);
+			document.getElementById('Lech1').innerHTML=a;
+		var c = Math.floor(Math.random()*6);
+			document.getElementById('Legia1').innerHTML=c;
+		var e = Math.floor(Math.random()*6);
+			document.getElementById('Wroclaw1').innerHTML=e;
+		var g = Math.floor(Math.random()*6);
+			document.getElementById('Zabrze1').innerHTML=g;
+		var i = Math.floor(Math.random()*6);
+			document.getElementById('Wisla1').innerHTML=i;
+		var k = Math.floor(Math.random()*6);
+			document.getElementById('GKS1').innerHTML=k;
+	}
+	//2 kolejka
+	if(klikniecia==2)
+	{
+		var b = Math.floor(Math.random()*6);
+			document.getElementById('Lech2').innerHTML=b;
+		var d = Math.floor(Math.random()*6);
+			document.getElementById('Legia2').innerHTML=d;
+		var f = Math.floor(Math.random()*6);
+			document.getElementById('Wroclaw2').innerHTML=f;
+		var h = Math.floor(Math.random()*6);
+			document.getElementById('Zabrze2').innerHTML=h;
+		var j = Math.floor(Math.random()*6);
+			document.getElementById('Wisla2').innerHTML=j;
+		var l = Math.floor(Math.random()*6);
+			document.getElementById('GKS2').innerHTML=l;
+	}
+	//3 kolejka
+	if(klikniecia==3)
+	{
+		var a2 = Math.floor(Math.random()*6);
+			document.getElementById('Lech3').innerHTML=a2;
+		var b2 = Math.floor(Math.random()*6);
+			document.getElementById('Legia3').innerHTML=b2;
+		var c2 = Math.floor(Math.random()*6);
+			document.getElementById('Wroclaw3').innerHTML=c2;
+		var d2 = Math.floor(Math.random()*6);
+			document.getElementById('Zabrze3').innerHTML=d2;
+		var e2 = Math.floor(Math.random()*6);
+			document.getElementById('Wisla3').innerHTML=e2;
+		var f2 = Math.floor(Math.random()*6);
+			document.getElementById('GKS3').innerHTML=f2;
+	}
+	//Punktacja
+	//1 kolejka
+		if(a>c)
+		{
+			var lech1=3;
+			var legia1=0;
+		}else if(a<c)
+		{
+			var lech1=0;
+			var legia1=3;
+		}else if(a==c)
+		{
+			var lech1=1;
+			var legia1=1;
+		}
+		if(k>g)
+		{
+			var gks1=3;
+			var zabrze1=0;
+		}else if(k<g)
+		{
+			var gks1=0;
+			var zabrze1=3;
+		}else if(k==g)
+		{
+			var gks1=1;
+			var zabrze1=1;
+		}
+		if(e>i)
+		{
+			var wroclaw1=3;
+			var wisla1=0;
+		}else if(e<i)
+		{
+			var wroclaw1=0;
+			var wisla1=3;
+		}else if(e==i)
+		{
+			var wroclaw1=1;
+			var wisla1=1;
+		}
+	//2 kolejka
+		if(j>d)
+		{
+			var wisla2=3;
+			var legia2=0;
+		}else if(j<d)
+		{
+			var wisla2=0;
+			var legia2=3;
+		}else if(j==d)
+		{
+			var wisla2=1;
+			var legia2=1;
+		}
+		if(h>f)
+		{
+			var zabrze2=3;
+			var wroclaw2=0;
+		}else if(h<f)
+		{
+			var zabrze2=0;
+			var wroclaw2=3;
+		}else if(h==f)
+		{
+			var zabrze2=1;
+			var wroclaw2=1;
+		}
+		if(b>l)
+		{
+			var lech2=3;
+			var gks2=0;
+		}else if(b<l)
+		{
+			var lech2=0;
+			var gks2=3;
+		}else if(b==l)
+		{
+			var lech2=1;
+			var gks2=1;
+		}
+	//3 kolejka
+		if(d2>a2)
+		{
+			var zabrze3=3;
+			var lech3=0;
+		}else if(d2<a2)
+		{
+			var zabrze3=0;
+			var lech3=3;
+		}else if(d2==a2)
+		{
+			var zabrze3=1;
+			var lech3=1;
+		}
+		if(f2>e2)
+		{
+			var gks3=3;
+			var wisla3=0;
+		}else if(f2<e2)
+		{
+			var gks3=0;
+			var wisla3=3;
+		}else if(f2==e2)
+		{
+			var gks3=1;
+			var wisla3=1;
+		}
+		if(c2>b2)
+		{
+			var wroclaw3=3;
+			var legia3=0;
+		}else if(c2<b2)
+		{
+			var wroclaw3=0;
+			var legia3=3;
+		}else if(c2==b2)
+		{
+			var wroclaw3=1;
+			var legia3=1;
+		}
+	//Dodawanie wyników + sortowanie i wyświetlanie
+	//1 kolejka
+		if(klikniecia==1)
+		{
+			lech=lech1;
+			legia=legia1;
+			wroclaw=wroclaw1;
+			zabrze=zabrze1;
+			wisla=wisla1;
+			gks=gks1;
+			var points = [lech + "pkt Lech Poznań", legia + "pkt Legia Warszawa", wroclaw + "pkt Śląsk Wrocław", zabrze + "pkt Górnik Zabrze", wisla + "pkt Wisła Kraków", gks + "pkt GKS Katowice"];
+			points.sort();
+			points.reverse();
+			document.getElementById("demo1").innerHTML = points[0];
+			document.getElementById("demo2").innerHTML = points[1];
+			document.getElementById("demo3").innerHTML = points[2];
+			document.getElementById("demo4").innerHTML = points[3];
+			document.getElementById("demo5").innerHTML = points[4];
+			document.getElementById("demo6").innerHTML = points[5];
+		//2 kolejka
+		}else if(klikniecia==2) 
+		{
+			lech=lech1+lech2;
+			legia=legia1+legia2;
+			wroclaw=wroclaw1+wroclaw2;
+			zabrze=zabrze1+zabrze2;
+			wisla=wisla1+wisla2;
+			gks=gks1+gks2;
+			var points = [lech + "pkt Lech Poznań", legia + "pkt Legia Warszawa", wroclaw + "pkt Śląsk Wrocław", zabrze + "pkt Górnik Zabrze", wisla + "pkt Wisła Kraków", gks + "pkt GKS Katowice"];
+			points.sort();
+			points.reverse();
+			document.getElementById("demo1").innerHTML = points[0];
+			document.getElementById("demo2").innerHTML = points[1];
+			document.getElementById("demo3").innerHTML = points[2];
+			document.getElementById("demo4").innerHTML = points[3];
+			document.getElementById("demo5").innerHTML = points[4];
+			document.getElementById("demo6").innerHTML = points[5];
+		//3 kolejka
+		}else if(klikniecia==3)
+		{
+			document.getElementById("wynik").innerHTML="Punktacja GKS: "+ "1. kolejka:"+gks1+" "+"2.kolejka:" +gks2+" "+"3. kolejka:" + gks3;
+			lech=lech1+lech2+lech3;
+			legia=legia1+legia2+legia3;
+			wroclaw=wroclaw1+wroclaw2+wroclaw3;
+			zabrze=zabrze1+zabrze2+zabrze3;
+			wisla=wisla1+wisla2+wisla3;
+			gks=gks1+gks2+gks3;
+			var points = [lech + "pkt Lech Poznań", legia + "pkt Legia Warszawa", wroclaw + "pkt Śląsk Wrocław", zabrze + "pkt Górnik Zabrze", wisla + "pkt Wisła Kraków", gks + "pkt GKS Katowice"];
+			points.sort();
+			points.reverse();
+			document.getElementById("demo1").innerHTML = points[0];
+			document.getElementById("demo2").innerHTML = points[1];
+			document.getElementById("demo3").innerHTML = points[2];
+			document.getElementById("demo4").innerHTML = points[3];
+			document.getElementById("demo5").innerHTML = points[4];
+			document.getElementById("demo6").innerHTML = points[5];
+		}
+	//Kolejne kroki
+		if(klikniecia==1)
+		{
+		przycisk.value = 2;
+		}else if(klikniecia==2)
+		{
+		przycisk.value = 3;
+		}
+	}
+</script>
+</body>
+</html>
