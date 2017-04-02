@@ -1,0 +1,830 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	function rozpocznijSezon(){
+	var zespoly=["Lech Poznań", "Legia Warszawa", "Wisła Kraków", "Górnik Zabrze", "Śląsk Wrocław", "GKS Katowice"];
+	//1 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("1").innerHTML=zespoly[0];
+	document.getElementById("2").innerHTML=zespoly[1];
+	document.getElementById("3").innerHTML=zespoly[2];
+	document.getElementById("4").innerHTML=zespoly[3];
+	document.getElementById("5").innerHTML=zespoly[4];
+	document.getElementById("6").innerHTML=zespoly[5];
+	//2 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("7").innerHTML=zespoly[0];
+	document.getElementById("8").innerHTML=zespoly[1];
+	document.getElementById("9").innerHTML=zespoly[2];
+	document.getElementById("10").innerHTML=zespoly[3];
+	document.getElementById("11").innerHTML=zespoly[4];
+	document.getElementById("12").innerHTML=zespoly[5];
+	//3 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("13").innerHTML=zespoly[0];
+	document.getElementById("14").innerHTML=zespoly[1];
+	document.getElementById("15").innerHTML=zespoly[2];
+	document.getElementById("16").innerHTML=zespoly[3];
+	document.getElementById("17").innerHTML=zespoly[4];
+	document.getElementById("18").innerHTML=zespoly[5];
+	//4 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("19").innerHTML=zespoly[0];
+	document.getElementById("20").innerHTML=zespoly[1];
+	document.getElementById("21").innerHTML=zespoly[2];
+	document.getElementById("22").innerHTML=zespoly[3];
+	document.getElementById("23").innerHTML=zespoly[4];
+	document.getElementById("24").innerHTML=zespoly[5];
+	//5 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("25").innerHTML=zespoly[0];
+	document.getElementById("26").innerHTML=zespoly[1];
+	document.getElementById("27").innerHTML=zespoly[2];
+	document.getElementById("28").innerHTML=zespoly[3];
+	document.getElementById("29").innerHTML=zespoly[4];
+	document.getElementById("30").innerHTML=zespoly[5];
+	//6 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("31").innerHTML=zespoly[0];
+	document.getElementById("32").innerHTML=zespoly[1];
+	document.getElementById("33").innerHTML=zespoly[2];
+	document.getElementById("34").innerHTML=zespoly[3];
+	document.getElementById("35").innerHTML=zespoly[4];
+	document.getElementById("36").innerHTML=zespoly[5];
+	//7 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("37").innerHTML=zespoly[0];
+	document.getElementById("38").innerHTML=zespoly[1];
+	document.getElementById("39").innerHTML=zespoly[2];
+	document.getElementById("40").innerHTML=zespoly[3];
+	document.getElementById("41").innerHTML=zespoly[4];
+	document.getElementById("42").innerHTML=zespoly[5];
+	//8 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("43").innerHTML=zespoly[0];
+	document.getElementById("44").innerHTML=zespoly[1];
+	document.getElementById("45").innerHTML=zespoly[2];
+	document.getElementById("46").innerHTML=zespoly[3];
+	document.getElementById("47").innerHTML=zespoly[4];
+	document.getElementById("48").innerHTML=zespoly[5];
+	//9 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("49").innerHTML=zespoly[0];
+	document.getElementById("50").innerHTML=zespoly[1];
+	document.getElementById("51").innerHTML=zespoly[2];
+	document.getElementById("52").innerHTML=zespoly[3];
+	document.getElementById("53").innerHTML=zespoly[4];
+	document.getElementById("54").innerHTML=zespoly[5];
+	//10 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("55").innerHTML=zespoly[0];
+	document.getElementById("56").innerHTML=zespoly[1];
+	document.getElementById("57").innerHTML=zespoly[2];
+	document.getElementById("58").innerHTML=zespoly[3];
+	document.getElementById("59").innerHTML=zespoly[4];
+	document.getElementById("60").innerHTML=zespoly[5];
+	//11 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("61").innerHTML=zespoly[0];
+	document.getElementById("62").innerHTML=zespoly[1];
+	document.getElementById("63").innerHTML=zespoly[2];
+	document.getElementById("64").innerHTML=zespoly[3];
+	document.getElementById("65").innerHTML=zespoly[4];
+	document.getElementById("66").innerHTML=zespoly[5];
+	//12 kolejka
+	zespoly.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("67").innerHTML=zespoly[0];
+	document.getElementById("68").innerHTML=zespoly[1];
+	document.getElementById("69").innerHTML=zespoly[2];
+	document.getElementById("70").innerHTML=zespoly[3];
+	document.getElementById("71").innerHTML=zespoly[4];
+	document.getElementById("72").innerHTML=zespoly[5];
+	}
+</script>
+<style>
+.Table{
+	border-radius: 0px;
+	border-style: solid;
+	border-width: 2px;
+    padding: 20px; 
+    width: 200px;
+    height: 400px; 
+}
+#przycisk {
+	position: absolute;
+	left: 7%;
+}
+#lewy {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 75%;
+	bottom: 0;
+	margin: auto;
+}
+#prawy {
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+table {
+    border-collapse: collapse;
+}
+}
+</style>
+</head>
+<body onLoad="rozpocznijSezon()">
+<center>
+	<h1>Symulator piłki nożnej</h1>
+	<br>
+	<div id="lewy"  align="center">
+		<div class="Table">
+			<div id="container">
+				<div>
+					<div><font size="5px"><b>Punktacja</b></font></div>
+					<div><hr /></div>
+				</div>
+				<b><p id="demo1"></p>
+				<hr />
+				<p id="demo2"></p>
+				<hr />
+				<p id="demo3"></p>
+				<hr />
+				<p id="demo4"></p>
+				<hr />
+				<p id="demo5"></p>
+				<hr />
+				<p id="demo6"></p></b>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div id="prawy">
+	<table border="2px solid black" cellpadding="5px">
+		<tr>
+			<th align="center" colspan="12px">Mecze</th>
+		</tr>
+		<tr>
+			<th align="center" colspan="3px">1. Kolejka</th>
+			<th align="center" colspan="3px">2. Kolejka</th>
+			<th align="center" colspan="3px">3. Kolejka</th>
+			<th align="center" colspan="3px">4. Kolejka</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="1"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="1wynik"></p></td>
+					<td>:</td>
+					<td><p id="2wynik"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="2"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="7"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="7wynik"></p></td>
+					<td>:</td>
+					<td><p id="8wynik"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="8"></p></td>
+				</table>
+			</td>
+			<!--- 3 i 4 kolejka --->
+			<td>
+				<table>
+					<td><p id="13"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p  id="14"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="19"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="20"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="3"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="4"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="9"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="10"></p></td>
+				</table>
+			</td>
+					<td>
+				<table>
+					<td><p id="15"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="16"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="21"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="22"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="5"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="6"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="11"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="12"></p></td>
+				</table>
+			</td>
+				<td>
+				<table>
+					<td><p id="17"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="18"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="23"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="24"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<th align="center" colspan="3px">5. Kolejka</th>
+			<th align="center" colspan="3px">6. Kolejka</th>
+			<th align="center" colspan="3px">7. Kolejka</th>
+			<th align="center" colspan="3px">8. Kolejka</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="25"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="26"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="31"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="32"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="37"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="38"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="43"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="44"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="27"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="28"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="33"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="34"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="39"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="40"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="45"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="46"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="29"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="30"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="35"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="36"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="41"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="42"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="47"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="48"></p></td>
+				</table>
+			</td>
+		</tr>
+				<tr>
+			<th align="center" colspan="3px">9. Kolejka</th>
+			<th align="center" colspan="3px">10. Kolejka</th>
+			<th align="center" colspan="3px">11. Kolejka</th>
+			<th align="center" colspan="3px">12. Kolejka</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="49"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="50"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="55"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="56"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="61"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="62"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="67"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="68"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="51"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="52"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="57"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="58"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="63"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="64"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="69"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="70"></p></td>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<td><p id="53"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="54"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="59"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="60"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="65"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="66"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="71"></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p></p></td>
+					<td>:</td>
+					<td><p></p></td>
+				</table>
+			</td>
+			<td>
+				<table>
+					<td><p id="72"></p></td>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<button id="przycisk" value="1" type="button" onClick="pilka()">Rozegraj mecze</button>
+	<p id="klik"></p>
+</center>
+<script>
+</script>
+</body>
+</html>
