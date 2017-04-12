@@ -1,14 +1,6 @@
 body{
 		background-color: #e8ecf2;
 	}
-	
-	 @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
     
 	#header{
 		background-color: #ad0000;
@@ -57,4 +49,8 @@ body{
 	#legend{
 		background-color: white;
 		margin-top: 30px;
+	}
+	
+	#ikonka{
+		margin-top: 5px;
 	}
