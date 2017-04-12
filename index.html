@@ -37,7 +37,6 @@
 		margin-left:15px; font-size: 50px;
 	}
 	
-	
 </style>
 <body>
 
@@ -58,8 +57,23 @@
 			<div class="col">
 					<h1>Tabela wyników</h1>
 				</div>
+				
+<!-- 
+
+	LEGENDA
+	dr - 1 do 16 ( dr - nazwa drużyny | numer to rząd w tabeli )
+	m - 1 do 16 ( m - ilość meczy | numer to rząd w tabeli )
+	pkt - 1 do 16 ( pkt - ilość punktów | numer to rzad w tabeli )
+	z - 1 do 16 ( z - zwycięsta | numer to rząd w tabeli )
+	r - 1 do 16 ( r - remisy | numer to rzad w tabeli )
+	p - 1 do 16 ( p - przegrane | numer to rzad w tabeli )
+	b - 1 do 16 ( b - bramki | numer to rzad w tabeli )
+	
+-->
+
 		</div>
-<!-- legenda -->
+		
+<!-- pierwszy rząd - nazwy kolumn -->
 		<div class="row" id="table">
 		<br>
 			<div class="col-md-1" ><b>Lp.</b></div>
@@ -75,193 +89,193 @@
 
 <!-- Rząd pierwszy -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>1</b></div>
+			<div class="col-md-4" ><b id="dr-1"></b></div>
+			<div class="col-md-1" ><b id="m-1"></b></div>
+			<div class="col-md-1" ><b id="pkt-1"></b></div>
+			<div class="col-md-1" ><b id="z-1"></b></div>
+			<div class="col-md-1" ><b id="r-1"></b></div>
+			<div class="col-md-1" ><b id="p-1"></b></div>
+			<div class="col-md-2" ><b id="b-1"></b></div>
 		</div>
 
 <!-- Rząd drugi -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>2</b></div>
+			<div class="col-md-4" ><b id="dr-2"></b></div>
+			<div class="col-md-1" ><b id="m-2"></b></div>
+			<div class="col-md-1" ><b id="pkt-2"></b></div>
+			<div class="col-md-1" ><b id="z-2"></b></div>
+			<div class="col-md-1" ><b id="r-2"></b></div>
+			<div class="col-md-1" ><b id="p-2"></b></div>
+			<div class="col-md-2" ><b id="b-2"></b></div>
 		</div>
 		
 <!-- Rząd trzeci -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>3</b></div>
+			<div class="col-md-4" ><b id="dr-3"></b></div>
+			<div class="col-md-1" ><b id="m-3"></b></div>
+			<div class="col-md-1" ><b id="pkt-3"></b></div>
+			<div class="col-md-1" ><b id="z-3"></b></div>
+			<div class="col-md-1" ><b id="r-3"></b></div>
+			<div class="col-md-1" ><b id="p-3"></b></div>
+			<div class="col-md-2" ><b id="b-3"></b></div>
 		</div>
 		
 <!-- Rząd czwarty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>4</b></div>
+			<div class="col-md-4" ><b id="dr-4"></b></div>
+			<div class="col-md-1" ><b id="m-4"></b></div>
+			<div class="col-md-1" ><b id="pkt-4"></b></div>
+			<div class="col-md-1" ><b id="z-4"></b></div>
+			<div class="col-md-1" ><b id="r-4"></b></div>
+			<div class="col-md-1" ><b id="p-4"></b></div>
+			<div class="col-md-2" ><b id="b-4"></b></div>
 		</div>
 		
 <!-- Rząd piąty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>5</b></div>
+			<div class="col-md-4" ><b id="dr-5"></b></div>
+			<div class="col-md-1" ><b id="m-5"></b></div>
+			<div class="col-md-1" ><b id="pkt-5"></b></div>
+			<div class="col-md-1" ><b id="z-5"></b></div>
+			<div class="col-md-1" ><b id="r-5"></b></div>
+			<div class="col-md-1" ><b id="p-5"></b></div>
+			<div class="col-md-2" ><b id="b-5"></b></div>
 		</div>
 
 <!-- Rząd szósty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>6</b></div>
+			<div class="col-md-4" ><b id="dr-6"></b></div>
+			<div class="col-md-1" ><b id="m-6"></b></div>
+			<div class="col-md-1" ><b id="pkt-6"></b></div>
+			<div class="col-md-1" ><b id="z-6"></b></div>
+			<div class="col-md-1" ><b id="r-6"></b></div>
+			<div class="col-md-1" ><b id="p-6"></b></div>
+			<div class="col-md-2" ><b id="b-6"></b></div>
 		</div>
 
 <!-- Rząd siódmy -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>7</b></div>
+			<div class="col-md-4" ><b id="dr-7"></b></div>
+			<div class="col-md-1" ><b id="m-7"></b></div>
+			<div class="col-md-1" ><b id="pkt-7"></b></div>
+			<div class="col-md-1" ><b id="z-7"></b></div>
+			<div class="col-md-1" ><b id="r-7"></b></div>
+			<div class="col-md-1" ><b id="p-7"></b></div>
+			<div class="col-md-2" ><b id="b-7"></b></div>
 		</div>
 
 <!-- Rząd ósmy -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>8</b></div>
+			<div class="col-md-4" ><b id="dr-8"></b></div>
+			<div class="col-md-1" ><b id="m-8"></b></div>
+			<div class="col-md-1" ><b id="pkt-8"></b></div>
+			<div class="col-md-1" ><b id="z-8"></b></div>
+			<div class="col-md-1" ><b id="r-8"></b></div>
+			<div class="col-md-1" ><b id="p-8"></b></div>
+			<div class="col-md-2" ><b id="b-8"></b></div>
 		</div>
 
 <!-- Rząd dziewiąty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>9</b></div>
+			<div class="col-md-4" ><b id="dr-9"></b></div>
+			<div class="col-md-1" ><b id="m-9"></b></div>
+			<div class="col-md-1" ><b id="pkt-9"></b></div>
+			<div class="col-md-1" ><b id="z-9"></b></div>
+			<div class="col-md-1" ><b id="r-9"></b></div>
+			<div class="col-md-1" ><b id="p-9"></b></div>
+			<div class="col-md-2" ><b id="b-9"></b></div>
 		</div>
 
 <!-- Rząd dziesiąty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>10</b></div>
+			<div class="col-md-4" ><b id="dr-10"></b></div>
+			<div class="col-md-1" ><b id="m-10"></b></div>
+			<div class="col-md-1" ><b id="pkt-11"></b></div>
+			<div class="col-md-1" ><b id="z-10"></b></div>
+			<div class="col-md-1" ><b id="r-10"></b></div>
+			<div class="col-md-1" ><b id="p-10"></b></div>
+			<div class="col-md-2" ><b id="b-10"></b></div>
 		</div>
 
 <!-- Rząd jedenasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>11</b></div>
+			<div class="col-md-4" ><b id="dr-11"></b></div>
+			<div class="col-md-1" ><b id="m-11"></b></div>
+			<div class="col-md-1" ><b id="pkt-11"></b></div>
+			<div class="col-md-1" ><b id="z-11"></b></div>
+			<div class="col-md-1" ><b id="r-11"></b></div>
+			<div class="col-md-1" ><b id="p-11"></b></div>
+			<div class="col-md-2" ><b id="b-11"></b></div>
 		</div>
 		
 <!-- Rząd dwunasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>12</b></div>
+			<div class="col-md-4" ><b id="dr-12"></b></div>
+			<div class="col-md-1" ><b id="m-12"></b></div>
+			<div class="col-md-1" ><b id="pkt-12"></b></div>
+			<div class="col-md-1" ><b id="z-12"></b></div>
+			<div class="col-md-1" ><b id="r-12"></b></div>
+			<div class="col-md-1" ><b id="p-12"></b></div>
+			<div class="col-md-2" ><b id="b-12"></b></div>
 		</div>
 <!-- Rząd trzynasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>13</b></div>
+			<div class="col-md-4" ><b id="dr-13"></b></div>
+			<div class="col-md-1" ><b id="m-13"></b></div>
+			<div class="col-md-1" ><b id="pkt-13"></b></div>
+			<div class="col-md-1" ><b id="z-13"></b></div>
+			<div class="col-md-1" ><b id="r-13"></b></div>
+			<div class="col-md-1" ><b id="p-13"></b></div>
+			<div class="col-md-2" ><b id="b-13"></b></div>
 		</div>
 		
 <!-- Rząd czternasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>14</b></div>
+			<div class="col-md-4" ><b id="dr-14"></b></div>
+			<div class="col-md-1" ><b id="m-14"></b></div>
+			<div class="col-md-1" ><b id="pkt-14"></b></div>
+			<div class="col-md-1" ><b id="z-14"></b></div>
+			<div class="col-md-1" ><b id="r-14"></b></div>
+			<div class="col-md-1" ><b id="p-14"></b></div>
+			<div class="col-md-2" ><b id="b-14"></b></div>
 		</div>
 
 <!-- Rząd piętnasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>15</b></div>
+			<div class="col-md-4" ><b id="dr-15"></b></div>
+			<div class="col-md-1" ><b id="m-15"></b></div>
+			<div class="col-md-1" ><b id="pkt-15"></b></div>
+			<div class="col-md-1" ><b id="z-15"></b></div>
+			<div class="col-md-1" ><b id="r-15"></b></div>
+			<div class="col-md-1" ><b id="p-15"></b></div>
+			<div class="col-md-2" ><b id="b-15"></b></div>
 		</div>
 
 <!-- Rząd szesnasty -->
 		<div class="row" id="table">
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-4" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-1" ><b>#</b></div>
-			<div class="col-md-2" ><b>#</b></div>
+			<div class="col-md-1" ><b>16</b></div>
+			<div class="col-md-4" ><b id="dr-16"></b></div>
+			<div class="col-md-1" ><b id="m-16"></b></div>
+			<div class="col-md-1" ><b id="pkt-16"></b></div>
+			<div class="col-md-1" ><b id="z-16"></b></div>
+			<div class="col-md-1" ><b id="r-16"></b></div>
+			<div class="col-md-1" ><b id="p-16"></b></div>
+			<div class="col-md-2" ><b id="b-16"></b></div>
 		</div>
 		
 	</div>
