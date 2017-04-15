@@ -299,356 +299,51 @@ function rozegrajKolejke()
 			gole[i]=Math.floor(Math.random()*6);
 		}
 		//Mecz 1 i 2 zespolu
-		if(gole[0]>gole[1])
+		for(var j=0; j<=14; j=j+2)
 		{
-			tabelaobiektow[0].punkty=3;
-			tabelaobiektow[1].punkty=0;
-			tabelaobiektow[0].zwyciestwa=1;
-			tabelaobiektow[0].remisy=0;
-			tabelaobiektow[0].porazki=0;
-			tabelaobiektow[0].gole=gole[0];
-			tabelaobiektow[0].stracone=gole[1];
-			tabelaobiektow[1].zwyciestwa=0;
-			tabelaobiektow[1].remisy=0;
-			tabelaobiektow[1].porazki=1;
-			tabelaobiektow[1].gole=gole[1];
-			tabelaobiektow[1].stracone=gole[0];
-		}else if(gole[0]<gole[1])
+		if(gole[j]>gole[j+1])
 		{
-			tabelaobiektow[1].punkty=3;
-			tabelaobiektow[0].punkty=0;
-			tabelaobiektow[1].zwyciestwa=1;
-			tabelaobiektow[1].remisy=0;
-			tabelaobiektow[1].porazki=0;
-			tabelaobiektow[1].gole=gole[1];
-			tabelaobiektow[1].stracone=gole[0];
-			tabelaobiektow[0].zwyciestwa=0;
-			tabelaobiektow[0].remisy=0;
-			tabelaobiektow[0].porazki=1;
-			tabelaobiektow[0].gole=gole[0];
-			tabelaobiektow[0].stracone=gole[1];
-		}else if(gole[0]==gole[1])
+			tabelaobiektow[j].punkty=3;
+			tabelaobiektow[j+1].punkty=0;
+			tabelaobiektow[j].zwyciestwa=1;
+			tabelaobiektow[j].remisy=0;
+			tabelaobiektow[j].porazki=0;
+			tabelaobiektow[j].gole=gole[j];
+			tabelaobiektow[j].stracone=gole[j+1];
+			tabelaobiektow[j+1].zwyciestwa=0;
+			tabelaobiektow[j+1].remisy=0;
+			tabelaobiektow[j+1].porazki=1;
+			tabelaobiektow[j+1].gole=gole[j+1];
+			tabelaobiektow[j+1].stracone=gole[j];
+		}else if(gole[j]<gole[j+1])
 		{
-			tabelaobiektow[0].punkty=1;
-			tabelaobiektow[1].punkty=1;
-			tabelaobiektow[0].zwyciestwa=0;
-			tabelaobiektow[0].remisy=1;
-			tabelaobiektow[0].porazki=0;
-			tabelaobiektow[1].zwyciestwa=0;
-			tabelaobiektow[1].remisy=1;
-			tabelaobiektow[1].porazki=0;
-			tabelaobiektow[0].gole=gole[0];
-			tabelaobiektow[1].gole=gole[1];
-			tabelaobiektow[0].stracone=gole[1];
-			tabelaobiektow[1].stracone=gole[0];
+			tabelaobiektow[j+1].punkty=3;
+			tabelaobiektow[j].punkty=0;
+			tabelaobiektow[j+1].zwyciestwa=1;
+			tabelaobiektow[j+1].remisy=0;
+			tabelaobiektow[j+1].porazki=0;
+			tabelaobiektow[j+1].gole=gole[j+1];
+			tabelaobiektow[j+1].stracone=gole[j];
+			tabelaobiektow[j].zwyciestwa=0;
+			tabelaobiektow[j].remisy=0;
+			tabelaobiektow[j].porazki=1;
+			tabelaobiektow[j].gole=gole[j];
+			tabelaobiektow[j].stracone=gole[j+1];
+		}else if(gole[j]==gole[j+1])
+		{
+			tabelaobiektow[j].punkty=1;
+			tabelaobiektow[j+1].punkty=1;
+			tabelaobiektow[j].zwyciestwa=0;
+			tabelaobiektow[j].remisy=1;
+			tabelaobiektow[j].porazki=0;
+			tabelaobiektow[j+1].zwyciestwa=0;
+			tabelaobiektow[j+1].remisy=1;
+			tabelaobiektow[j+1].porazki=0;
+			tabelaobiektow[j].gole=gole[j];
+			tabelaobiektow[j+1].gole=gole[j+1];
+			tabelaobiektow[j].stracone=gole[j+1];
+			tabelaobiektow[j+1].stracone=gole[j];
 		}
-		//Mecz 3 i 4 zespolu
-		if(gole[2]>gole[3])
-		{
-			tabelaobiektow[2].punkty=3;
-			tabelaobiektow[3].punkty=0;
-			tabelaobiektow[2].zwyciestwa=1;
-			tabelaobiektow[2].remisy=0;
-			tabelaobiektow[2].porazki=0;
-			tabelaobiektow[2].gole=gole[2];
-			tabelaobiektow[2].stracone=gole[3];
-			tabelaobiektow[3].zwyciestwa=0;
-			tabelaobiektow[3].remisy=0;
-			tabelaobiektow[3].porazki=1;
-			tabelaobiektow[3].gole=gole[3];
-			tabelaobiektow[3].stracone=gole[2];
-		}else if(gole[2]<gole[3])
-		{
-			tabelaobiektow[3].punkty=3;
-			tabelaobiektow[2].punkty=0;
-			tabelaobiektow[3].zwyciestwa=1;
-			tabelaobiektow[3].remisy=0;
-			tabelaobiektow[3].porazki=0;
-			tabelaobiektow[3].gole=gole[3];
-			tabelaobiektow[3].stracone=gole[2];
-			tabelaobiektow[2].zwyciestwa=0;
-			tabelaobiektow[2].remisy=0;
-			tabelaobiektow[2].porazki=1;
-			tabelaobiektow[2].gole=gole[2];
-			tabelaobiektow[2].stracone=gole[3];
-		}else if(gole[2]==gole[3])
-		{
-			tabelaobiektow[2].punkty=1;
-			tabelaobiektow[3].punkty=1;
-			tabelaobiektow[2].zwyciestwa=0;
-			tabelaobiektow[2].remisy=1;
-			tabelaobiektow[2].porazki=0;
-			tabelaobiektow[3].zwyciestwa=0;
-			tabelaobiektow[3].remisy=1;
-			tabelaobiektow[3].porazki=0;
-			tabelaobiektow[2].gole=gole[2];
-			tabelaobiektow[3].gole=gole[3];
-			tabelaobiektow[2].stracone=gole[3];
-			tabelaobiektow[3].stracone=gole[2];
-		}
-		//Mecz 5 i 6 zespolu
-		if(gole[4]>gole[5])
-		{
-			tabelaobiektow[4].punkty=3;
-			tabelaobiektow[5].punkty=0;
-			tabelaobiektow[4].zwyciestwa=1;
-			tabelaobiektow[4].remisy=0;
-			tabelaobiektow[4].porazki=0;
-			tabelaobiektow[4].gole=gole[4];
-			tabelaobiektow[4].stracone=gole[5];
-			tabelaobiektow[5].zwyciestwa=0;
-			tabelaobiektow[5].remisy=0;
-			tabelaobiektow[5].porazki=1;
-			tabelaobiektow[5].gole=gole[5];
-			tabelaobiektow[5].stracone=gole[4];
-		}else if(gole[4]<gole[5])
-		{
-			tabelaobiektow[5].punkty=3;
-			tabelaobiektow[4].punkty=0;
-			tabelaobiektow[5].zwyciestwa=1;
-			tabelaobiektow[5].remisy=0;
-			tabelaobiektow[5].porazki=0;
-			tabelaobiektow[5].gole=gole[5];
-			tabelaobiektow[5].stracone=gole[4];
-			tabelaobiektow[4].zwyciestwa=0;
-			tabelaobiektow[4].remisy=0;
-			tabelaobiektow[4].porazki=1;
-			tabelaobiektow[4].gole=gole[4];
-			tabelaobiektow[4].stracone=gole[5];
-		}else if(gole[4]==gole[5])
-		{
-			tabelaobiektow[4].punkty=1;
-			tabelaobiektow[5].punkty=1;
-			tabelaobiektow[4].zwyciestwa=0;
-			tabelaobiektow[4].remisy=1;
-			tabelaobiektow[4].porazki=0;
-			tabelaobiektow[5].zwyciestwa=0;
-			tabelaobiektow[5].remisy=1;
-			tabelaobiektow[5].porazki=0;
-			tabelaobiektow[4].gole=gole[4];
-			tabelaobiektow[5].gole=gole[5];
-			tabelaobiektow[4].stracone=gole[5];
-			tabelaobiektow[5].stracone=gole[4];
-		}
-		//Mecz 7 i 8 zespolu
-		if(gole[6]>gole[7])
-		{
-			tabelaobiektow[6].punkty=3;
-			tabelaobiektow[7].punkty=0;
-			tabelaobiektow[6].zwyciestwa=1;
-			tabelaobiektow[6].remisy=0;
-			tabelaobiektow[6].porazki=0;
-			tabelaobiektow[6].gole=gole[6];
-			tabelaobiektow[6].stracone=gole[7];
-			tabelaobiektow[7].zwyciestwa=0;
-			tabelaobiektow[7].remisy=0;
-			tabelaobiektow[7].porazki=1;
-			tabelaobiektow[7].gole=gole[7];
-			tabelaobiektow[7].stracone=gole[6];
-		}else if(gole[6]<gole[7])
-		{
-			tabelaobiektow[7].punkty=3;
-			tabelaobiektow[6].punkty=0;
-			tabelaobiektow[7].zwyciestwa=1;
-			tabelaobiektow[7].remisy=0;
-			tabelaobiektow[7].porazki=0;
-			tabelaobiektow[7].gole=gole[7];
-			tabelaobiektow[7].stracone=gole[6];
-			tabelaobiektow[6].zwyciestwa=0;
-			tabelaobiektow[6].remisy=0;
-			tabelaobiektow[6].porazki=1;
-			tabelaobiektow[6].gole=gole[6];
-			tabelaobiektow[6].stracone=gole[7];
-		}else if(gole[6]==gole[7])
-		{
-			tabelaobiektow[6].punkty=1;
-			tabelaobiektow[7].punkty=1;
-			tabelaobiektow[6].zwyciestwa=0;
-			tabelaobiektow[6].remisy=1;
-			tabelaobiektow[6].porazki=0;
-			tabelaobiektow[7].zwyciestwa=0;
-			tabelaobiektow[7].remisy=1;
-			tabelaobiektow[7].porazki=0;
-			tabelaobiektow[6].gole=gole[6];
-			tabelaobiektow[7].gole=gole[7];
-			tabelaobiektow[6].stracone=gole[7];
-			tabelaobiektow[7].stracone=gole[6];
-		}
-		//Mecz 9 i 10 zespolu
-		if(gole[8]>gole[9])
-		{
-			tabelaobiektow[8].punkty=3;
-			tabelaobiektow[9].punkty=0;
-			tabelaobiektow[8].zwyciestwa=1;
-			tabelaobiektow[8].remisy=0;
-			tabelaobiektow[8].porazki=0;
-			tabelaobiektow[8].gole=gole[8];
-			tabelaobiektow[8].stracone=gole[9];
-			tabelaobiektow[9].zwyciestwa=0;
-			tabelaobiektow[9].remisy=0;
-			tabelaobiektow[9].porazki=1;
-			tabelaobiektow[9].gole=gole[8];
-			tabelaobiektow[9].stracone=gole[9];
-		}else if(gole[8]<gole[9])
-		{
-			tabelaobiektow[9].punkty=3;
-			tabelaobiektow[8].punkty=0;
-			tabelaobiektow[9].zwyciestwa=1;
-			tabelaobiektow[9].remisy=0;
-			tabelaobiektow[9].porazki=0;
-			tabelaobiektow[9].gole=gole[9];
-			tabelaobiektow[9].stracone=gole[8];
-			tabelaobiektow[8].zwyciestwa=0;
-			tabelaobiektow[8].remisy=0;
-			tabelaobiektow[8].porazki=1;
-			tabelaobiektow[8].gole=gole[8];
-			tabelaobiektow[8].stracone=gole[9];
-		}else if(gole[8]==gole[9])
-		{
-			tabelaobiektow[8].punkty=1;
-			tabelaobiektow[9].punkty=1;
-			tabelaobiektow[8].zwyciestwa=0;
-			tabelaobiektow[8].remisy=1;
-			tabelaobiektow[8].porazki=0;
-			tabelaobiektow[9].zwyciestwa=0;
-			tabelaobiektow[9].remisy=1;
-			tabelaobiektow[9].porazki=0;
-			tabelaobiektow[8].gole=gole[8];
-			tabelaobiektow[9].gole=gole[9];
-			tabelaobiektow[8].stracone=gole[9];
-			tabelaobiektow[9].stracone=gole[8];
-		}
-		//Mecz 11 i 12 zespolu
-		if(gole[10]>gole[11])
-		{
-			tabelaobiektow[10].punkty=3;
-			tabelaobiektow[11].punkty=0;
-			tabelaobiektow[10].zwyciestwa=1;
-			tabelaobiektow[10].remisy=0;
-			tabelaobiektow[10].porazki=0;
-			tabelaobiektow[10].gole=gole[10];
-			tabelaobiektow[10].stracone=gole[11];
-			tabelaobiektow[11].zwyciestwa=0;
-			tabelaobiektow[11].remisy=0;
-			tabelaobiektow[11].porazki=1;
-			tabelaobiektow[11].gole=gole[11];
-			tabelaobiektow[11].stracone=gole[10];
-		}else if(gole[10]<gole[11])
-		{
-			tabelaobiektow[11].punkty=3;
-			tabelaobiektow[10].punkty=0;
-			tabelaobiektow[11].zwyciestwa=1;
-			tabelaobiektow[11].remisy=0;
-			tabelaobiektow[11].porazki=0;
-			tabelaobiektow[11].gole=gole[11];
-			tabelaobiektow[11].stracone=gole[10];
-			tabelaobiektow[10].zwyciestwa=0;
-			tabelaobiektow[10].remisy=0;
-			tabelaobiektow[10].porazki=1;
-			tabelaobiektow[10].gole=gole[10];
-			tabelaobiektow[10].stracone=gole[11];
-		}else if(gole[10]==gole[11])
-		{
-			tabelaobiektow[10].punkty=1;
-			tabelaobiektow[11].punkty=1;
-			tabelaobiektow[10].zwyciestwa=0;
-			tabelaobiektow[10].remisy=1;
-			tabelaobiektow[10].porazki=0;
-			tabelaobiektow[11].zwyciestwa=0;
-			tabelaobiektow[11].remisy=1;
-			tabelaobiektow[11].porazki=0;
-			tabelaobiektow[10].gole=gole[10];
-			tabelaobiektow[11].gole=gole[11];
-			tabelaobiektow[10].stracone=gole[11];
-			tabelaobiektow[11].stracone=gole[10];
-		}
-		//Mecz 13 i 14 zespolu
-		if(gole[12]>gole[13])
-		{
-			tabelaobiektow[12].punkty=3;
-			tabelaobiektow[13].punkty=0;
-			tabelaobiektow[12].zwyciestwa=1;
-			tabelaobiektow[12].remisy=0;
-			tabelaobiektow[12].porazki=0;
-			tabelaobiektow[12].gole=gole[12];
-			tabelaobiektow[12].stracone=gole[13];
-			tabelaobiektow[13].zwyciestwa=0;
-			tabelaobiektow[13].remisy=0;
-			tabelaobiektow[13].porazki=1;
-			tabelaobiektow[13].gole=gole[13];
-			tabelaobiektow[13].stracone=gole[12];
-		}else if(gole[12]<gole[13])
-		{
-			tabelaobiektow[13].punkty=3;
-			tabelaobiektow[12].punkty=0;
-			tabelaobiektow[13].zwyciestwa=1;
-			tabelaobiektow[13].remisy=0;
-			tabelaobiektow[13].porazki=0;
-			tabelaobiektow[13].gole=gole[13];
-			tabelaobiektow[13].stracone=gole[12];
-			tabelaobiektow[12].zwyciestwa=0;
-			tabelaobiektow[12].remisy=0;
-			tabelaobiektow[12].porazki=1;
-			tabelaobiektow[12].gole=gole[12];
-			tabelaobiektow[12].stracone=gole[13];
-		}else if(gole[12]==gole[13])
-		{
-			tabelaobiektow[12].punkty=1;
-			tabelaobiektow[13].punkty=1;
-			tabelaobiektow[12].zwyciestwa=0;
-			tabelaobiektow[12].remisy=1;
-			tabelaobiektow[12].porazki=0;
-			tabelaobiektow[13].zwyciestwa=0;
-			tabelaobiektow[13].remisy=1;
-			tabelaobiektow[13].porazki=0;
-			tabelaobiektow[12].gole=gole[12];
-			tabelaobiektow[13].gole=gole[13];
-			tabelaobiektow[12].stracone=gole[13];
-			tabelaobiektow[13].stracone=gole[12];
-		}
-		//Mecz 15 i 16 zespolu
-		if(gole[14]>gole[15])
-		{
-			tabelaobiektow[14].punkty=3;
-			tabelaobiektow[15].punkty=0;
-			tabelaobiektow[14].zwyciestwa=1;
-			tabelaobiektow[14].remisy=0;
-			tabelaobiektow[14].porazki=0;
-			tabelaobiektow[14].gole=gole[14];
-			tabelaobiektow[14].stracone=gole[15];
-			tabelaobiektow[15].zwyciestwa=0;
-			tabelaobiektow[15].remisy=0;
-			tabelaobiektow[15].porazki=1;
-			tabelaobiektow[15].gole=gole[15];
-			tabelaobiektow[15].stracone=gole[14];
-		}else if(gole[14]<gole[15])
-		{
-			tabelaobiektow[15].punkty=3;
-			tabelaobiektow[14].punkty=0;
-			tabelaobiektow[15].zwyciestwa=1;
-			tabelaobiektow[15].remisy=0;
-			tabelaobiektow[15].porazki=0;
-			tabelaobiektow[15].gole=gole[15];
-			tabelaobiektow[15].stracone=gole[14];
-			tabelaobiektow[14].zwyciestwa=0;
-			tabelaobiektow[14].remisy=0;
-			tabelaobiektow[14].porazki=1;
-			tabelaobiektow[14].gole=gole[14];
-			tabelaobiektow[14].stracone=gole[15];
-		}else if(gole[14]==gole[15])
-		{
-			tabelaobiektow[14].punkty=1;
-			tabelaobiektow[15].punkty=1;
-			tabelaobiektow[14].zwyciestwa=0;
-			tabelaobiektow[14].remisy=1;
-			tabelaobiektow[14].porazki=0;
-			tabelaobiektow[15].zwyciestwa=0;
-			tabelaobiektow[15].remisy=1;
-			tabelaobiektow[15].porazki=0;
-			tabelaobiektow[14].gole=gole[14];
-			tabelaobiektow[15].gole=gole[15];
-			tabelaobiektow[14].stracone=gole[15];
-			tabelaobiektow[15].stracone=gole[14];
 		}
 		for(var i=1;i<=16;i++)
 		{
@@ -661,7 +356,6 @@ function rozegrajKolejke()
 		document.getElementById("b-"+i).innerHTML=tabelaobiektow[i-1].gole + ":" + tabelaobiektow[i-1].stracone;
 		//Mecze
 		document.getElementById("m-"+i).innerHTML=1;
-
 		}
 	}
 }
