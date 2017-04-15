@@ -650,136 +650,19 @@ function rozegrajKolejke()
 			tabelaobiektow[14].stracone=gole[15];
 			tabelaobiektow[15].stracone=gole[14];
 		}
+		for(var i=1;i<=16;i++)
+		{
 		//Wyświetlenie na stronie
-		//1 druzyna
-		document.getElementById("dr-1").innerHTML=tabelaobiektow[0].nazwa;
-		document.getElementById("pkt-1").innerHTML=tabelaobiektow[0].punkty;
-		document.getElementById("z-1").innerHTML=tabelaobiektow[0].zwyciestwa;
-		document.getElementById("r-1").innerHTML=tabelaobiektow[0].remisy;
-		document.getElementById("p-1").innerHTML=tabelaobiektow[0].porazki;
-		document.getElementById("b-1").innerHTML=tabelaobiektow[0].gole + ":" + tabelaobiektow[0].stracone;
-		//2 druzyna
-		document.getElementById("dr-2").innerHTML=tabelaobiektow[1].nazwa;
-		document.getElementById("pkt-2").innerHTML=tabelaobiektow[1].punkty;
-		document.getElementById("z-2").innerHTML=tabelaobiektow[1].zwyciestwa;
-		document.getElementById("r-2").innerHTML=tabelaobiektow[1].remisy;
-		document.getElementById("p-2").innerHTML=tabelaobiektow[1].porazki;
-		document.getElementById("b-2").innerHTML=tabelaobiektow[1].gole + ":" + tabelaobiektow[1].stracone;
-		//3 druzyna
-		document.getElementById("dr-3").innerHTML=tabelaobiektow[2].nazwa;
-		document.getElementById("pkt-3").innerHTML=tabelaobiektow[2].punkty;
-		document.getElementById("z-3").innerHTML=tabelaobiektow[2].zwyciestwa;
-		document.getElementById("r-3").innerHTML=tabelaobiektow[2].remisy;
-		document.getElementById("p-3").innerHTML=tabelaobiektow[2].porazki;
-		document.getElementById("b-3").innerHTML=tabelaobiektow[2].gole + ":" + tabelaobiektow[2].stracone;
-		//4 druzyna
-		document.getElementById("dr-4").innerHTML=tabelaobiektow[3].nazwa;
-		document.getElementById("pkt-4").innerHTML=tabelaobiektow[3].punkty;
-		document.getElementById("z-4").innerHTML=tabelaobiektow[3].zwyciestwa;
-		document.getElementById("r-4").innerHTML=tabelaobiektow[3].remisy;
-		document.getElementById("p-4").innerHTML=tabelaobiektow[3].porazki;
-		document.getElementById("b-4").innerHTML=tabelaobiektow[3].gole + ":" + tabelaobiektow[3].stracone;
-		//5 druzyna
-		document.getElementById("dr-5").innerHTML=tabelaobiektow[4].nazwa;
-		document.getElementById("pkt-5").innerHTML=tabelaobiektow[4].punkty;
-		document.getElementById("z-5").innerHTML=tabelaobiektow[4].zwyciestwa;
-		document.getElementById("r-5").innerHTML=tabelaobiektow[4].remisy;
-		document.getElementById("p-5").innerHTML=tabelaobiektow[4].porazki;
-		document.getElementById("b-5").innerHTML=tabelaobiektow[4].gole + ":" + tabelaobiektow[4].stracone;
-		//6 druzyna
-		document.getElementById("dr-6").innerHTML=tabelaobiektow[5].nazwa;
-		document.getElementById("pkt-6").innerHTML=tabelaobiektow[5].punkty;
-		document.getElementById("z-6").innerHTML=tabelaobiektow[5].zwyciestwa;
-		document.getElementById("r-6").innerHTML=tabelaobiektow[5].remisy;
-		document.getElementById("p-6").innerHTML=tabelaobiektow[5].porazki;
-		document.getElementById("b-6").innerHTML=tabelaobiektow[5].gole + ":" + tabelaobiektow[5].stracone;
-		//7 druzyna
-		document.getElementById("dr-7").innerHTML=tabelaobiektow[6].nazwa;
-		document.getElementById("pkt-7").innerHTML=tabelaobiektow[6].punkty;
-		document.getElementById("z-7").innerHTML=tabelaobiektow[6].zwyciestwa;
-		document.getElementById("r-7").innerHTML=tabelaobiektow[6].remisy;
-		document.getElementById("p-7").innerHTML=tabelaobiektow[6].porazki;
-		document.getElementById("b-7").innerHTML=tabelaobiektow[6].gole + ":" + tabelaobiektow[6].stracone;
-		//8 druzyna
-		document.getElementById("dr-8").innerHTML=tabelaobiektow[7].nazwa;
-		document.getElementById("pkt-8").innerHTML=tabelaobiektow[7].punkty;
-		document.getElementById("z-8").innerHTML=tabelaobiektow[7].zwyciestwa;
-		document.getElementById("r-8").innerHTML=tabelaobiektow[7].remisy;
-		document.getElementById("p-8").innerHTML=tabelaobiektow[7].porazki;
-		document.getElementById("b-8").innerHTML=tabelaobiektow[7].gole + ":" + tabelaobiektow[7].stracone;
-		//9 druzyna
-		document.getElementById("dr-9").innerHTML=tabelaobiektow[8].nazwa;
-		document.getElementById("pkt-9").innerHTML=tabelaobiektow[8].punkty;
-		document.getElementById("z-9").innerHTML=tabelaobiektow[8].zwyciestwa;
-		document.getElementById("r-9").innerHTML=tabelaobiektow[8].remisy;
-		document.getElementById("p-9").innerHTML=tabelaobiektow[8].porazki;
-		document.getElementById("b-9").innerHTML=tabelaobiektow[8].gole + ":" + tabelaobiektow[8].stracone;
-		//10 druzyna
-		document.getElementById("dr-10").innerHTML=tabelaobiektow[9].nazwa;
-		document.getElementById("pkt-10").innerHTML=tabelaobiektow[9].punkty;
-		document.getElementById("z-10").innerHTML=tabelaobiektow[9].zwyciestwa;
-		document.getElementById("r-10").innerHTML=tabelaobiektow[9].remisy;
-		document.getElementById("p-10").innerHTML=tabelaobiektow[9].porazki;
-		document.getElementById("b-10").innerHTML=tabelaobiektow[9].gole + ":" + tabelaobiektow[9].stracone;
-		//11 druzyna
-		document.getElementById("dr-11").innerHTML=tabelaobiektow[10].nazwa;
-		document.getElementById("pkt-11").innerHTML=tabelaobiektow[10].punkty;
-		document.getElementById("z-11").innerHTML=tabelaobiektow[10].zwyciestwa;
-		document.getElementById("r-11").innerHTML=tabelaobiektow[10].remisy;
-		document.getElementById("p-11").innerHTML=tabelaobiektow[10].porazki;
-		document.getElementById("b-11").innerHTML=tabelaobiektow[10].gole + ":" + tabelaobiektow[10].stracone;
-		//12 druzyna
-		document.getElementById("dr-12").innerHTML=tabelaobiektow[11].nazwa;
-		document.getElementById("pkt-12").innerHTML=tabelaobiektow[11].punkty;
-		document.getElementById("z-12").innerHTML=tabelaobiektow[11].zwyciestwa;
-		document.getElementById("r-12").innerHTML=tabelaobiektow[11].remisy;
-		document.getElementById("p-12").innerHTML=tabelaobiektow[11].porazki;
-		document.getElementById("b-12").innerHTML=tabelaobiektow[11].gole + ":" + tabelaobiektow[11].stracone;
-		//13 druzyna
-		document.getElementById("dr-13").innerHTML=tabelaobiektow[12].nazwa;
-		document.getElementById("pkt-13").innerHTML=tabelaobiektow[12].punkty;
-		document.getElementById("z-13").innerHTML=tabelaobiektow[12].zwyciestwa;
-		document.getElementById("r-13").innerHTML=tabelaobiektow[12].remisy;
-		document.getElementById("p-13").innerHTML=tabelaobiektow[12].porazki;
-		document.getElementById("b-13").innerHTML=tabelaobiektow[12].gole + ":" + tabelaobiektow[12].stracone;
-		//14 druzyna
-		document.getElementById("dr-14").innerHTML=tabelaobiektow[13].nazwa;
-		document.getElementById("pkt-14").innerHTML=tabelaobiektow[13].punkty;
-		document.getElementById("z-14").innerHTML=tabelaobiektow[13].zwyciestwa;
-		document.getElementById("r-14").innerHTML=tabelaobiektow[13].remisy;
-		document.getElementById("p-14").innerHTML=tabelaobiektow[13].porazki;
-		document.getElementById("b-14").innerHTML=tabelaobiektow[13].gole + ":" + tabelaobiektow[13].stracone;
-		//15 druzyna
-		document.getElementById("dr-15").innerHTML=tabelaobiektow[14].nazwa;
-		document.getElementById("pkt-15").innerHTML=tabelaobiektow[14].punkty;
-		document.getElementById("z-15").innerHTML=tabelaobiektow[14].zwyciestwa;
-		document.getElementById("r-15").innerHTML=tabelaobiektow[14].remisy;
-		document.getElementById("p-15").innerHTML=tabelaobiektow[14].porazki;
-		document.getElementById("b-15").innerHTML=tabelaobiektow[14].gole + ":" + tabelaobiektow[14].stracone;
-		//16 druzyna
-		document.getElementById("dr-16").innerHTML=tabelaobiektow[15].nazwa;
-		document.getElementById("pkt-16").innerHTML=tabelaobiektow[15].punkty;
-		document.getElementById("z-16").innerHTML=tabelaobiektow[15].zwyciestwa;
-		document.getElementById("r-16").innerHTML=tabelaobiektow[15].remisy;
-		document.getElementById("p-16").innerHTML=tabelaobiektow[15].porazki;
-		document.getElementById("b-16").innerHTML=tabelaobiektow[15].gole + ":" + tabelaobiektow[15].stracone;
+		document.getElementById("dr-"+i).innerHTML=tabelaobiektow[i-1].nazwa;
+		document.getElementById("pkt-"+i).innerHTML=tabelaobiektow[i-1].punkty;
+		document.getElementById("z-"+i).innerHTML=tabelaobiektow[i-1].zwyciestwa;
+		document.getElementById("r-"+i).innerHTML=tabelaobiektow[i-1].remisy;
+		document.getElementById("p-"+i).innerHTML=tabelaobiektow[i-1].porazki;
+		document.getElementById("b-"+i).innerHTML=tabelaobiektow[i-1].gole + ":" + tabelaobiektow[i-1].stracone;
 		//Mecze
-		document.getElementById("m-1").innerHTML=1;
-		document.getElementById("m-2").innerHTML=1;
-		document.getElementById("m-3").innerHTML=1;
-		document.getElementById("m-4").innerHTML=1;
-		document.getElementById("m-5").innerHTML=1;
-		document.getElementById("m-6").innerHTML=1;
-		document.getElementById("m-7").innerHTML=1;
-		document.getElementById("m-8").innerHTML=1;
-		document.getElementById("m-9").innerHTML=1;
-		document.getElementById("m-10").innerHTML=1;
-		document.getElementById("m-11").innerHTML=1;
-		document.getElementById("m-12").innerHTML=1;
-		document.getElementById("m-13").innerHTML=1;
-		document.getElementById("m-14").innerHTML=1;
-		document.getElementById("m-15").innerHTML=1;
-		document.getElementById("m-16").innerHTML=1;
+		document.getElementById("m-"+i).innerHTML=1;
+
+		}
 	}
 }
 	</script>
