@@ -1,4 +1,5 @@
 var tabelaobiektow = [];
+var sort = [];
 function zespoly() 
 {
 	var zespoly = ["Jagiellonia Białystok","Legia Warszawa","Lechia Gdańsk","Lech Poznań","Wisła Kraków","Korona Kielce","Wisła Płock",
@@ -12,7 +13,28 @@ function zespoly()
 	}
 }
 
-function kolejka()
+function sortowanie()
 {
- // mecze miedzy zespołami na sztywno bo szef mówi że nie mamy wiedzy
+	for(var i=0;i<=15;i++)
+	{
+		sort[i] = tabelaobiektow[i];
+	}
+	
+	for(var i=0;i<=15;i++)
+	{
+		for(var j=0;j<=14;j++)
+		{
+			if(sort[j+1].punkty>sort[j].punkty)
+			{
+			var c = sort[j];
+			sort[j] = sort[j+1];
+			sort[j+1] = c;
+			}
+		}
+	}
+	
+	for(var i=0;i<=15;i++)
+	{
+		alert(sort[i].punkty);
+	}
 }
